@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Web Quiz Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- animation stylesheet -->
+  <link href="css/animate.css" rel="stylesheet">
+
+  <!-- Fontawesome stylesheet -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body class="light-bg home-bg">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a href="index.html" class="h1"><i class="fa fa-angle-left color-dark"></i></a>
+      <h5 class="text-white text-center mx-auto"><b>My Profile</b></h5>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+
+  <div class="container">
+    <div class="modal fade" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: contents !important;">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-modal shadow p-3 border-0" style="margin-top: 6rem;">
+          <img src="images/user.png" id="profileImage" class="user-profile shadow mx-auto img-fluid rounded-circle mt-n5 mb-1 animated wow pulse" />
+          <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+          <h4 class="color-dark text-right mt-n4 animated wow fadeInUp">25,600</h4>
+          <h5 class="color-light text-center animated wow fadeInDown delay-0-3s">Henna Leo</h5>
+          <h6 class="color-light text-center animated wow fadeInDown delay-0-4s">henna4@gmail.com</h6>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group input-group w-100 animated wow fadeInDown delay-0-1s">
+                    <div class="input-group-prepend">
+                      <span><img src="images/left-icon.png"/></span>
+                    </div>
+                    <input type="text" class="form-control textfield-rounded shadow-sm mb-4 ml-n3" id="recipient-user" placeholder="Username">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group input-group w-100 animated wow fadeInDown delay-0-2s">
+                    <div class="input-group-prepend">
+                      <span><img src="images/right-icon.png" class="rotate-180" /></span>
+                    </div>
+                    <input type="text" class="form-control textfield-rounded shadow-sm p-3 mb-4 ml-n3" id="recipient-mobile" placeholder="Mobile Number">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group input-group w-100 animated wow fadeInDown delay-0-3s">
+                    <div class="input-group-prepend">
+                      <span><img src="images/right-icon.png" class="rotate-180" /></span>
+                    </div>
+                    <input type="text" class="form-control textfield-rounded shadow-sm p-3 mb-4 ml-n3" id="recipient-adress" placeholder="Address">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group input-group w-100 animated wow fadeInDown delay-0-4s">
+                    <div class="input-group-prepend">
+                      <span><img src="images/left-icon.png"/></span>
+                    </div>
+                    <input type="text" class="form-control textfield-rounded shadow-sm p-3 mb-4 ml-n3" id="recipient-country" placeholder="Country">
+                  </div>
+                </div>
+              </div>
+              <center><button type="button" class="gradientBtn w-50 animated wow fadeInUp">Save</button><center>
+              </form>
+            </div>
+
+            <div class="modal-footer border-0 mt-n4">
+              <center>
+                <p class="text-center mt-3 animated wow fadeInUp"><a href="profile.html" data-toggle="modal" data-target="#passModal" data-whatever=""class="color-blue">Change Password</a> </p>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Change Password Modal -->
+      <div class="modal fade mt-5" id="passModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog mt-5" role="document">
+          <div class="modal-content rounded-modal shadow p-3" style="margin-top: 4rem;">
+            <center>
+              <span class="loginSquare mt-n5"><p class="text-white line-height-20 text-center ml-n2 mt-2" id="exampleModalLabel">Change Password</p></span>
+            </center>
+            <div class="modal-header border-0 p-0">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form><center>
+                <div class="form-group input-group w-75 animated wow fadeInDown delay-0-1s">
+                  <input type="password" class="form-control textfield-rounded shadow-sm p-3 mb-3 zIndex-1" id="recipient-name" placeholder="Old Password">
+                  <div class="input-group-append z-Index-2">
+                    <span><img src="images/right-icon.png" class="ml-n6" /><i class="fa fa-key ml-n4-1 text-white"></i></span>
+                  </div>
+                </div>
+                <div class="form-group input-group w-75 z-Index-2 animated wow fadeInDown delay-0-2s">
+                  <div class="input-group-prepend z-Index-2">
+                    <span><img src="images/left-icon.png" /><i class="fa fa-key ml-n4-2 text-white"></i></span>
+                  </div>
+                  <input type="password" class="form-control textfield-rounded shadow-sm p-3 mb-3 zIndex-1" id="recipient-pass" placeholder="New Password">
+                </div>
+                <div class="form-group input-group w-75 z-Index-2 animated wow fadeInDown delay-0-3s">
+                  <div class="input-group-prepend z-Index-2">
+                    <span><img src="images/left-icon.png" /><i class="fa fa-key ml-n4-2 text-white"></i></span>
+                  </div>
+                  <input type="password" class="form-control textfield-rounded shadow-sm p-3 mb-4 zIndex-1" id="recipient-pass" placeholder="Confirm Password">
+                </div>
+              </center>
+              <center><button type="button" class="gradientBtn w-75 animated wow fadeInUp delay-0-4s">Save</button><center>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="fixed-bottom mt-3 m-bg">
+      <p class="color-blue ml-5"><small>Copyright &copy; LPK Tehnosoft 2020</small></p>
+    </footer>
+
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script type="text/javascript">
+        $("#profileImage").click(function(e) {
+          $("#imageUpload").click();
+        });
+
+        function fasterPreview( uploader ) {
+          if ( uploader.files && uploader.files[0] ){
+            $('#profileImage').attr('src', 
+             window.URL.createObjectURL(uploader.files[0]) );
+          }
+        }
+
+        $("#imageUpload").change(function(){
+          fasterPreview( this );
+        });
+      </script>
+	  <!-- 
+right click off -->
+<script type="text/javascript">
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+    </body>
+</html>

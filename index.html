@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Web Quiz Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- animation stylesheet -->
+  <link href="css/animate.css" rel="stylesheet">
+
+  <!-- Fontawesome stylesheet -->
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body class="home-bg mb-3">
+
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn " onclick="closeNav()">&times;</a>
+  <a href="profile.html" class=""><img src="images/user.png" class="user-profile shadow img-fluid rounded-circle ml-3"/></a>
+  <a href="index.html" class="text-white text-left"><small><p>henna4@gmail.com</p></small></a>
+  <a href="category.html"><i class="fa fa-th-large text-white mr-3"></i>Category</a>
+  <a href="category.html"><i class="fa fa-question text-white mr-3"></i>Play Quiz</a>
+  <a href="quiz.html"><i class="fa fa-random text-white mr-3"></i>Random Quiz</a>
+  <a href="leaderboard.html"><i class="fa fa-users text-white mr-3"></i>Leaderboard</a>
+  <a href="score-history.html"><i class="fa fa-history text-white mr-3"></i>Score History</a>
+  <a href="profile.html"><i class="fa fa-user-o text-white mr-3"></i>My Profile</a>
+  <a href="index.html#"><i class="fa fa-power-off text-white mr-3"></i>Logout</a>
+</div>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <span class="menu" onclick="openNav()"><img src="images/menu.png" /></span>
+    <a class="zIndex-1 ml-n5 mr-5" href="index.html#"><img src="images/logo.png" class="d-none d-sm-none d-md-block ml-n5 mr-5" /></a>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link text-white cursor-pointer" data-toggle="modal" data-target="#loginModal" data-whatever="">Login</a>
+      </li>
+      <li class="nav-item">
+        <span class="nav-link color-blue" href="#">|</span>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white cursor-pointer" data-toggle="modal" data-target="#signUpModal" data-whatever="">SignUP</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Login Modal -->
+<div class="modal fade mt-5" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mt-5" role="document">
+    <div class="modal-content rounded-modal shadow p-3" style="margin-top: 4rem;">
+      <center>
+        <span class="loginSquare mt-n5"><p class="text-white" id="exampleModalLabel">Login</p></span>
+      </center>
+      <div class="modal-header border-0 p-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form><center>
+          <div class="form-group input-group w-75 animated wow fadeInDown delay-0-1s">
+            <input type="text" class="form-control textfield-rounded shadow-sm p-3 mb-3 zIndex-1" id="recipient-name" placeholder="Email">
+            <div class="input-group-append z-Index-2">
+              <span><img src="images/right-icon.png" class="ml-n6" /><i class="fa fa-envelope ml-n4-1 text-white"></i></span>
+            </div>
+          </div>
+          <div class="form-group input-group w-75 animated wow fadeInDown delay-0-2s">
+            <div class="input-group-prepend z-Index-2">
+              <span><img src="images/left-icon.png" /><i class="fa fa-key ml-n4-2 text-white"></i></span>
+            </div>
+            <input type="password" class="form-control textfield-rounded shadow-sm p-3 mb-4 zIndex-1" id="recipient-pass" placeholder="Password">
+          </div></center>
+          <center><button type="button" class="gradientBtn w-75 animated wow fadeInDown delay-0-3s">Login</button><center>
+            <p class="text-center color-blue mt-3 animated wow fadeInDown delay-0-3s">OR</p>
+          </form>
+        </div>
+        
+        <div class="modal-footer border-0 mt-n4">
+          <center>
+            <button type="button" class="btn-lg social-login rounded-circle shadow mr-4 bg-white animated wow zoomIn delay-0-5s"><i class="fa fa-google google-icon"></i></button>
+            <button type="button" class="social-login rounded-circle shadow bg-white animated wow zoomIn delay-0-6s"><i class="fa fa-facebook fb-icon"></i></button>
+            <p class="text-center color-dark mt-3 animated wow fadeInUp delay-0-3s">Don't have an account? <a href="index.html" data-dismiss="modal" class="color-blue" data-toggle="modal" data-target="#signUpModal" data-whatever="">Sign UP</a> </p>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SignUp Modal -->
+<div class="modal fade mt-5" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg mt-5" role="document">
+    <div class="modal-content rounded-modal shadow p-3" style="margin-top: 4rem;">
+      <center>
+        <span class="loginSquare mt-n5"><p class="text-white" id="exampleModalLabel">SignUp</p></span>
+      </center>
+      <div class="modal-header border-0 p-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form><center>
+          <div class="row">
+              <div class="col-lg-6 form-group input-group w-75 animated wow fadeInDown delay-0-1s">
+                <div class="input-group-prepend z-Index-2">
+                  <span><img src="images/left-icon.png"/><i class="fa fa-user-o zIndex-2 ml-n4-2 text-white"></i></span>
+                </div>
+                <input type="text" class="form-control textfield-rounded shadow-sm p-3 mb-4 zIndex-1" id="recipient-user" placeholder="Username">
+              </div>
+              <div class="col-lg-6 form-group input-group w-75 animated wow fadeInDown delay-0-2s">
+                <div class="input-group-prepend z-Index-2">
+                  <span><img src="images/right-icon.png" class="rotate-180" /><i class="fa fa-envelope zIndex-2 ml-n4-2 text-white rotate-n0"></i></span>
+                </div>
+                <input type="text" class="form-control textfield-rounded shadow-sm p-3 mb-4 zIndex-1" id="recipient-email" placeholder="Email">
+              </div>
+              <div class="col-lg-6 form-group input-group w-75 animated wow fadeInDown delay-0-3s">
+                <div class="input-group-prepend z-Index-2">
+                  <span><img src="images/right-icon.png" class="rotate-180" /><i class="fa fa-key rotate-n0 zIndex-2 ml-n4-2 text-white"></i></span>
+                </div>
+                <input type="password" class="form-control textfield-rounded shadow-sm p-3 mb-4 zIndex-1" id="recipient-password" placeholder="Password">
+              </div>
+              <div class="col-lg-6 form-group input-group w-75 animated wow fadeInDown delay-0-4s">
+                <div class="input-group-prepend z-Index-2">
+                  <span><img src="images/left-icon.png"/><i class="fa fa-key zIndex-2 ml-n4-2 text-white"></i></span>
+                </div>
+                <input type="text" class="form-control textfield-rounded shadow-sm p-3 mb-4 zIndex-1" id="recipient-password" placeholder="Confirm Password">
+              </div>
+              
+          </div></center>
+          <center><button type="button" class="gradientBtn w-75 animated wow fadeInUp delay-0-5s">Sign UP</button><center>
+            <p class="text-center color-blue mt-3 animated wow fadeInUp delay-0-5s pb-5">OR</p>
+          </form>
+          <div class="modal-footer border-0 mt-n5">
+          <center>
+            <button type="button" class="btn-lg social-login rounded-circle shadow mr-4 bg-white animated wow zoomIn delay-0-5s"><i class="fa fa-google google-icon"></i></button>
+            <button type="button" class="social-login rounded-circle shadow bg-white animated wow zoomIn delay-0-6s"><i class="fa fa-facebook fb-icon"></i></button>
+            <p class="text-center color-dark mt-3 animated wow fadeInUp delay-0-6s">Already have an account? <a href="index.html" data-dismiss="modal" class="color-purple" data-toggle="modal" data-target="#loginModal" data-whatever="">Login</a> </p>
+          </center>
+        </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+<!-- Page Content -->
+<div class="container-fluid mt-5 mb-5">
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-5">
+      <h1 class="color-blue mt-5 animated wow fadeInDown delay-0-1s">Quiz</h1>
+      <p class="animated wow fadeInDown delay-0-2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptates rerum eveniet sapiente repellat esse, doloremque quod recusandae deleniti nostrum assumenda vel beatae sed aut modi nesciunt porro quisquam voluptatem.</p>
+      <a href="category.html"><button class="gradientBtn animated wow fadeInUp delay-0-3s">Play Quiz</button></a>
+    </div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-5">
+      <img src="images/right-img.png" class="img-fluid animated wow pulse slow infinite" />
+    </div>
+  </div>
+  <div class="float-left ml-5">
+   <img src="images/bottom-img.png" class="img-fluid animated wow swing slower infinite" />
+ </div>
+</div>
+
+<footer class="fixed-bottom mt-5 m-bg">
+  <p class="color-blue ml-5"><small>Copyright &copy; LPK Tehnosoft 2020</small></p>
+</footer>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Left Side Bar -->
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.cssText = "width:270px; border-right: 10px solid #fff; box-shadow: 1px 8px 8px 8px rgba(73,21,155,0.3); -webkit-box-shadow: 1px 8px 8px 8px rgba(73,21,155,0.3);  -moz-box-shadow: 1px 8px 8px 8px rgba(73,21,155,0.3);";
+    var element = document.getElementById("mySidenav");
+    element.classList.add("animated wow bounceInLeft slow");
+
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.cssText = "width:0; border:none; box-shadow: none;";
+  }
+</script>
+
+<!-- For Login -->
+<script type="text/javascript">
+  $('#loginModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+</script>
+
+<!-- For SignUp -->
+<script type="text/javascript">
+  $('#signUpModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+</script>
+<!-- 
+right click off -->
+<script type="text/javascript">
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+</body>
+
+</html>
